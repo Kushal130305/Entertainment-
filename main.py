@@ -14,7 +14,7 @@ service = build('blogger', 'v3', credentials=creds, static_discovery=False)
 
 # RSS feed URL
 rss_feed_url = 'https://www.indiatv.in/rssnews/topstory.xml'
-blog_id = '5471535692467886308'
+blog_id = os.environ.get('blog_id')
 
 keep_alive()
 
