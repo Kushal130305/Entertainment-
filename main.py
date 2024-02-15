@@ -9,7 +9,7 @@ import os
 
 # Set up your Blogger API credentials and scopes
 SCOPES = ['https://www.googleapis.com/auth/blogger']
-creds = Credentials.from_authorized_user_file(os.environ.get('token.json'), SCOPES)
+creds = Credentials.from_authorized_user_file('token.json', SCOPES)
 service = build('blogger', 'v3', credentials=creds, static_discovery=False)
 
 # RSS feed URL
